@@ -1,0 +1,192 @@
+ahmed@AhmedAliDell MINGW64 ~/git/repository (master)
+$ pwd
+/c/Users/ahmed/git/repository
+
+ahmed@AhmedAliDell MINGW64 ~/git/repository (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/ahmed/git/repository/.git/
+
+ahmed@AhmedAliDell MINGW64 ~/git/repository (master)
+$ git add .
+warning: LF will be replaced by CRLF in AltimetrikRecipeExercise/.gitignore.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in AltimetrikRecipeExercise/.mvn/wrapper/MavenWrapperDownloader.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in AltimetrikRecipeExercise/.mvn/wrapper/maven-wrapper.properties.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in AltimetrikRecipeExercise/mvnw.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in AltimetrikRecipeExercise/mvnw.cmd.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in AltimetrikRecipeExercise/pom.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in AltimetrikRecipeExercise/src/main/java/com/altimetrik/AltimetrikRecipeExerciseApplication.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in AltimetrikRecipeExercise/src/main/java/com/altimetrik/configuration/SwaggerConfig.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in AltimetrikRecipeExercise/src/main/resources/application.properties.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in AltimetrikRecipeExercise/src/test/java/com/altimetrik/AltimetrikRecipeExerciseApplicationTests.java.
+The file will have its original line endings in your working directory
+
+ahmed@AhmedAliDell MINGW64 ~/git/repository (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   AltimetrikRecipeExercise/.gitignore
+        new file:   AltimetrikRecipeExercise/.mvn/wrapper/MavenWrapperDownloader.java
+        new file:   AltimetrikRecipeExercise/.mvn/wrapper/maven-wrapper.jar
+        new file:   AltimetrikRecipeExercise/.mvn/wrapper/maven-wrapper.properties
+        new file:   AltimetrikRecipeExercise/mvnw
+        new file:   AltimetrikRecipeExercise/mvnw.cmd
+        new file:   AltimetrikRecipeExercise/pom.xml
+        new file:   AltimetrikRecipeExercise/src/main/java/com/altimetrik/AltimetrikRecipeExerciseApplication.java
+        new file:   AltimetrikRecipeExercise/src/main/java/com/altimetrik/configuration/SwaggerConfig.java
+        new file:   AltimetrikRecipeExercise/src/main/java/com/altimetrik/configuration/WebMvcConfiguration.java
+        new file:   AltimetrikRecipeExercise/src/main/java/com/altimetrik/controller/RecipeController.java
+        new file:   AltimetrikRecipeExercise/src/main/java/com/altimetrik/domain/Ingredient.java
+        new file:   AltimetrikRecipeExercise/src/main/java/com/altimetrik/domain/Nutrition.java
+        new file:   AltimetrikRecipeExercise/src/main/java/com/altimetrik/domain/NutritionRequest.java
+        new file:   AltimetrikRecipeExercise/src/main/java/com/altimetrik/domain/Recipe.java
+        new file:   AltimetrikRecipeExercise/src/main/java/com/altimetrik/external/NutritionProxy.java
+        new file:   AltimetrikRecipeExercise/src/main/java/com/altimetrik/external/RecipeProxy.java
+        new file:   AltimetrikRecipeExercise/src/main/java/com/altimetrik/service/NutritionService.java
+        new file:   AltimetrikRecipeExercise/src/main/java/com/altimetrik/service/RecipeService.java
+        new file:   AltimetrikRecipeExercise/src/main/java/com/altimetrik/service/impl/NutritionServiceImpl.java
+        new file:   AltimetrikRecipeExercise/src/main/java/com/altimetrik/service/impl/RecipeServiceImpl.java
+        new file:   AltimetrikRecipeExercise/src/main/resources/application.properties
+        new file:   AltimetrikRecipeExercise/src/main/resources/templates/food/foodHome.html
+        new file:   AltimetrikRecipeExercise/src/main/resources/templates/food/index.html
+        new file:   AltimetrikRecipeExercise/src/main/resources/templates/food/page2.html
+        new file:   AltimetrikRecipeExercise/src/test/java/com/altimetrik/AltimetrikRecipeExerciseApplicationTests.java
+        new file:   AltimetrikRecipeExercise/src/test/java/com/altimetrik/test/RecipeServiceTest.java
+
+
+ahmed@AhmedAliDell MINGW64 ~/git/repository (master)
+$ git commit -m "first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ahmed@AhmedAliDell.(none)')
+
+ahmed@AhmedAliDell MINGW64 ~/git/repository (master)
+$ git config --global ahmed_amin007@hotmail.com
+error: invalid key: ahmed_amin007@hotmail.com
+
+ahmed@AhmedAliDell MINGW64 ~/git/repository (master)
+$ git commit -m "first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ahmed@AhmedAliDell.(none)')
+
+ahmed@AhmedAliDell MINGW64 ~/git/repository (master)
+$ git config --global user.email ahmed_amin007@hotmail.com
+
+ahmed@AhmedAliDell MINGW64 ~/git/repository (master)
+$ git config --global user.name ahmedali
+
+ahmed@AhmedAliDell MINGW64 ~/git/repository (master)
+$ git commit -m "first commit"
+[master (root-commit) 4f4a0f2] first commit
+ 27 files changed, 1583 insertions(+)
+ create mode 100644 AltimetrikRecipeExercise/.gitignore
+ create mode 100644 AltimetrikRecipeExercise/.mvn/wrapper/MavenWrapperDownloader.java
+ create mode 100644 AltimetrikRecipeExercise/.mvn/wrapper/maven-wrapper.jar
+ create mode 100644 AltimetrikRecipeExercise/.mvn/wrapper/maven-wrapper.properties
+ create mode 100644 AltimetrikRecipeExercise/mvnw
+ create mode 100644 AltimetrikRecipeExercise/mvnw.cmd
+ create mode 100644 AltimetrikRecipeExercise/pom.xml
+ create mode 100644 AltimetrikRecipeExercise/src/main/java/com/altimetrik/AltimetrikRecipeExerciseApplication.java
+ create mode 100644 AltimetrikRecipeExercise/src/main/java/com/altimetrik/configuration/SwaggerConfig.java
+ create mode 100644 AltimetrikRecipeExercise/src/main/java/com/altimetrik/configuration/WebMvcConfiguration.java
+ create mode 100644 AltimetrikRecipeExercise/src/main/java/com/altimetrik/controller/RecipeController.java
+ create mode 100644 AltimetrikRecipeExercise/src/main/java/com/altimetrik/domain/Ingredient.java
+ create mode 100644 AltimetrikRecipeExercise/src/main/java/com/altimetrik/domain/Nutrition.java
+ create mode 100644 AltimetrikRecipeExercise/src/main/java/com/altimetrik/domain/NutritionRequest.java
+ create mode 100644 AltimetrikRecipeExercise/src/main/java/com/altimetrik/domain/Recipe.java
+ create mode 100644 AltimetrikRecipeExercise/src/main/java/com/altimetrik/external/NutritionProxy.java
+ create mode 100644 AltimetrikRecipeExercise/src/main/java/com/altimetrik/external/RecipeProxy.java
+ create mode 100644 AltimetrikRecipeExercise/src/main/java/com/altimetrik/service/NutritionService.java
+ create mode 100644 AltimetrikRecipeExercise/src/main/java/com/altimetrik/service/RecipeService.java
+ create mode 100644 AltimetrikRecipeExercise/src/main/java/com/altimetrik/service/impl/NutritionServiceImpl.java
+ create mode 100644 AltimetrikRecipeExercise/src/main/java/com/altimetrik/service/impl/RecipeServiceImpl.java
+ create mode 100644 AltimetrikRecipeExercise/src/main/resources/application.properties
+ create mode 100644 AltimetrikRecipeExercise/src/main/resources/templates/food/foodHome.html
+ create mode 100644 AltimetrikRecipeExercise/src/main/resources/templates/food/index.html
+ create mode 100644 AltimetrikRecipeExercise/src/main/resources/templates/food/page2.html
+ create mode 100644 AltimetrikRecipeExercise/src/test/java/com/altimetrik/AltimetrikRecipeExerciseApplicationTests.java
+ create mode 100644 AltimetrikRecipeExercise/src/test/java/com/altimetrik/test/RecipeServiceTest.java
+
+ahmed@AhmedAliDell MINGW64 ~/git/repository (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ahmed@AhmedAliDell MINGW64 ~/git/repository (master)
+$ git remote add origin https://github.com/ahmedamin007/WebServiceExercise.git
+
+ahmed@AhmedAliDell MINGW64 ~/git/repository (master)
+$ git push  -u origin master
+To https://github.com/ahmedamin007/WebServiceExercise.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/ahmedamin007/WebServiceExercise.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ahmed@AhmedAliDell MINGW64 ~/git/repository (master)
+$ git push  -u origin master
+To https://github.com/ahmedamin007/WebServiceExercise.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/ahmedamin007/WebServiceExercise.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ahmed@AhmedAliDell MINGW64 ~/git/repository (master)
+$ ^C
+
+ahmed@AhmedAliDell MINGW64 ~/git/repository (master)
+$ git push -f origin master
+Enumerating objects: 51, done.
+Counting objects: 100% (51/51), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (43/43), done.
+Writing objects: 100% (51/51), 61.23 KiB | 3.83 MiB/s, done.
+Total 51 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/ahmedamin007/WebServiceExercise.git
+ + b26237d...4f4a0f2 master -> master (forced update)
+
+ahmed@AhmedAliDell MINGW64 ~/git/repository (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ahmed@AhmedAliDell MINGW64 ~/git/repository (master)
+$
