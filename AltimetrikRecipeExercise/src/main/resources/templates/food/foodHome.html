@@ -1,0 +1,104 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Food Search API</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1> Food </h1>
+		</div>
+	</div>
+	<div class="row">
+	<div class="col-md-2">
+		<form action="#" class="form-horizontal"
+			  th:action="@{/altimetrik/queryIngredients}"
+			  th:object="${form}"
+			  method="post">
+		<fieldset>
+			<table class="table">
+				<thead>
+				</thead>
+				<tbody>
+					<td><input type="text" id="dataquery" name="dataquery" />Food Query</td>
+					<td>
+						<div class="container">
+						  <p>Please select the Api:</p>
+						  <div class="dropdown">
+						    <select id="api" name ="api" >
+							  <option value="nutrition" selected >nutrition</option>
+							  <option value="recipe">recipe</option>
+						    </select>
+						  </div>
+						</div>
+					</td>
+				</tbody>
+			</table>
+			<span class="pull-right">
+				    <input type="submit" id="submitButton" class="btn btn-success" th:value="Query">
+				    <input type="reset" id="resetButton" class="btn btn-danger" th:value="Reset"/>
+			</span>
+		</fieldset>
+	  </form>
+	</div> 
+	</div>	
+	<div class="row">
+		<div class="col-md-6">
+			<!-- ingredient -->
+			<table class="table">
+				<thead>
+ 					<tr th:if="${mode} eq 1"> 
+						<th> Description </th>
+						<th> Food Name </th>
+						<th> Service Unit </th>
+						<th> Units Grams </th>
+						<th> Fat </th>
+						<th> Protein </th>
+						<th> carbohydrate </th>
+					</tr>  
+				</thead>
+				<tbody>
+ 					<tr th:each="ingredient : ${ingredients}">
+						<td><span th:text="${ingredient.description}"></span></td>
+						<td><span th:text="${ingredient.foodName}"></span></td>
+						<td><span th:text="${ingredient.serviceUnit}"></span></td>
+						<td><span th:text="${ingredient.servingUnitsGrams}"></span></td>
+						<td><span th:text="${ingredient.nutrition.fat}"></span></td>
+						<td><span th:text="${ingredient.nutrition.protein}"></span></td>
+						<td><span th:text="${ingredient.nutrition.carbohydrate}"></span></td>
+					</tr> 
+				</tbody>
+			</table>
+			
+			<!-- Recipe -->
+			<table class="table">
+				<thead>
+ 					<tr th:if="${mode} eq 2"> 
+						<th> Query </th>
+						<th> Name </th>
+						<th> Uri </th>
+						<th> Source </th>
+						<th> Fat </th>
+						<th> Protein </th>
+						<th> carbohydrate </th>
+					</tr>  
+				</thead>
+				<tbody>
+ 					<tr th:each="recipe : ${recipes}">
+						<td><span th:text="${recipe.query}"></span></td>
+						<td><span th:text="${recipe.name}"></span></td>
+						<td><span th:text="${recipe.uri}"></span></td>
+						<td><span th:text="${recipe.source}"></span></td>
+						<td><span th:text="${recipe.nutrition.fat}"></span></td>
+						<td><span th:text="${recipe.nutrition.protein}"></span></td>
+						<td><span th:text="${recipe.nutrition.carbohydrate}"></span></td>
+					</tr> 
+				</tbody>
+			</table>
+			
+		</div>
+	</div>
+</div>
+</body>
+</html>
